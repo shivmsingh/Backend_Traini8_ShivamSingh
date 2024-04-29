@@ -1,9 +1,36 @@
-## Endpoints
+## Steps to Run the Application
+
+1. Clone the GitHub Repository
+2. Change Directory to "Traini8" (cd)
+3. Run "docker-compose up" command in the terminal (It may take a while if you do not have the MySQL image installed)
+4. The App should be running now.
+
+## Alternate Steps (Without Docker)
+
+1. Clone the GitHub Repository
+2. Change Directory to "Traini8" (cd)
+3. please add your own details such as URL, username and Password in "application.properties"
+4. Run "Traini8Application"
+5. The App should be running now.
+
+## API's Implemented
+
+1. Post Training Center
+2. Get Training Centers
+3. Update Training Center
+4. Delete Training Center
+5. Get Training Centers By CenterId
+6. Get Training Centers By Capacity
+7. Get Training Centers By Name
+8. Get Training Center by Course Offered
+
+
+## API CONTRACT
  
 ### 1. Post Training Center
  
 ```
-POST {{base_url}}
+POST http://localhost:8080/api/trainingcenters
 ```
  
 #### Request Body
@@ -53,7 +80,7 @@ POST {{base_url}}
 ### 2. Get Training Centers
  
 ```
-GET {{base_url}}
+GET http://localhost:8080/api/trainingcenters
 ```
  
 #### Response
@@ -218,7 +245,7 @@ GET {{base_url}}
 ### 3. Update Training Center
  
 ```
-PUT {{base_url}}/TRN456789121
+PUT http://localhost:8080/api/trainingcenters/TRN456789121
 ```
  
 #### Request Body
@@ -267,7 +294,7 @@ PUT {{base_url}}/TRN456789121
 ### 4. Delete Training Center
  
 ```
-DELETE {{base_url}}/TRN456789122
+DELETE http://localhost:8080/api/trainingcenters/TRN456789122
 ```
  
 #### Response
@@ -279,7 +306,7 @@ DELETE {{base_url}}/TRN456789122
 ### 5. Get Training Centers By Id
  
 ```
-GET {{base_url}}/id/TRN456789121
+GET http://localhost:8080/api/trainingcenters/id/TRN456789121
 ```
  
 #### Response
@@ -309,7 +336,7 @@ GET {{base_url}}/id/TRN456789121
 ### 6. Get Training Centers By Capacity
  
 ```
-GET {{base_url}}/capacity?min=200&max=400
+GET http://localhost:8080/api/trainingcenters/capacity?min=200&max=400
 ```
  
 #### Response
@@ -398,7 +425,7 @@ GET {{base_url}}/capacity?min=200&max=400
 ### 7. Get Training Centers By Name
  
 ```
-GET {{base_url}}/name/training center 1
+GET http://localhost:8080/api/trainingcenters/name/training center 1
 ```
  
 #### Response
@@ -427,10 +454,10 @@ GET {{base_url}}/name/training center 1
 ]
 ```
  
-### 8. Get data by course
+### 8. Get Training Center by Course Offered
  
 ```
-GET {{base_url}}/course/Java
+GET http://localhost:8080/api/trainingcenters/course/Java
 ```
  
 #### Response
