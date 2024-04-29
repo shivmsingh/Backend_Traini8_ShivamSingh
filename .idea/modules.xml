@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Traini8.iml" filepath="$PROJECT_DIR$/.idea/Traini8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Backend_Traini8_ShivamSingh.iml" filepath="$PROJECT_DIR$/.idea/Backend_Traini8_ShivamSingh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Traini8/Traini8.iml" filepath="$PROJECT_DIR$/Traini8/Traini8.iml" />
     </modules>
   </component>
 </project>
