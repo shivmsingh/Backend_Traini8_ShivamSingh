@@ -66,7 +66,7 @@ public class GlobalExceptionHandler {
     public ResponseEntity<ErrorResponse> handleException(Exception ex) {
         ErrorResponse errorResponse = new ErrorResponse(
                 LocalDateTime.now(),
-                "Internal Server Error",
+                ex.getMessage(),
                 "Training Center API",
                 HttpStatus.INTERNAL_SERVER_ERROR.value(),
                 null
